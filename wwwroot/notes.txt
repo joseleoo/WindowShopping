@@ -1,0 +1,45 @@
+Models Builder es una herramienta en Umbraco que permite la generación automática de modelos fuertemente tipados basados en los tipos de contenido definidos en el CMS. Esto facilita a los desarrolladores trabajar con los datos de contenido de manera tipada en el código C#. A continuación, te explico los detalles de la configuración que has proporcionado:
+
+Versión
+plaintext
+Copy code
+Models Builder
+Version: 13.3.2+696a711
+Indica la versión específica de Models Builder que se está utilizando.
+
+Configuración de Models Builder
+Modo de Modelos: 'SourceCodeAuto'
+plaintext
+Copy code
+The models mode is 'SourceCodeAuto'.
+En el modo 'SourceCodeAuto', los modelos se generan automáticamente cada vez que se realizan cambios en el esquema (por ejemplo, en los Tipos de Contenido). Esto asegura que los modelos siempre estén actualizados con la estructura del contenido en Umbraco.
+
+Generación Automática y Recompilación
+plaintext
+Copy code
+Strong typed models are generated on demand and anytime schema changes (i.e. Content Type) are made. Recompilation is necessary and models are available to all CSharp code.
+Los modelos fuertemente tipados se generan bajo demanda y cada vez que se realizan cambios en el esquema del contenido. Después de la generación, es necesario recompilar el proyecto para que los nuevos modelos estén disponibles en todo el código C#.
+
+Espacio de Nombres de los Modelos
+plaintext
+Copy code
+Models namespace is Umbraco.Cms.Web.Common.PublishedModels.
+Los modelos generados se colocan en el espacio de nombres Umbraco.Cms.Web.Common.PublishedModels. Esto organiza los modelos dentro de un espacio de nombres específico para facilitar su uso e identificación en el código.
+
+Seguimiento de Modelos Desactualizados
+plaintext
+Copy code
+Tracking of out-of-date models is not enabled.
+El seguimiento de modelos desactualizados no está habilitado. Esto significa que no hay un mecanismo automático para indicar si los modelos generados están desactualizados respecto al esquema actual del contenido.
+
+Opción de Generar Modelos
+plaintext
+Copy code
+Generate models
+Esta opción sugiere la disponibilidad de una funcionalidad para generar manualmente los modelos. Esto puede hacerse típicamente a través de la interfaz de usuario de Umbraco o mediante comandos específicos.
+
+Resumen de Beneficios
+Automatización: La generación automática de modelos ahorra tiempo y esfuerzo, asegurando que los desarrolladores siempre trabajen con la estructura de contenido más reciente.
+Fuertemente Tipado: Trabajar con modelos fuertemente tipados mejora la seguridad del tipo y facilita la navegación y el autocompletado en el IDE.
+Organización: Colocar los modelos en un espacio de nombres específico organiza el código y lo hace más manejable.
+Esta configuración es especialmente útil en entornos de desarrollo dinámicos donde el esquema de contenido puede cambiar con frecuencia, permitiendo a los desarrolladores mantener el código sincronizado con la estructura del contenido sin intervención manual.
