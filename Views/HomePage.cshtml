@@ -4,3 +4,19 @@
 @{
 	Layout = null;
 }
+<h1>@Model.Name</h1>
+<h2>@Model.Title</h2>
+
+@{
+	var exam="some";
+}
+@if(Model.Names !=null && Model.Names.Any()){
+
+<ul>
+	@foreach(var name in Model.Names)
+	{
+
+		<li>@name</li>
+	}
+</ul>
+}
