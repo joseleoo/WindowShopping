@@ -44,3 +44,5 @@ Fuertemente Tipado: Trabajar con modelos fuertemente tipados mejora la seguridad
 Organización: Colocar los modelos en un espacio de nombres específico organiza el código y lo hace más manejable.
 Esta configuración es especialmente útil en entornos de desarrollo dinámicos donde el esquema de contenido puede cambiar con frecuencia, permitiendo a los desarrolladores mantener el código sincronizado con la estructura del contenido sin intervención manual.
 https://youtu.be/j7RyoF_LuL0?si=9-calkWyEdaKq-Qe&t=1669
+https://youtu.be/j7RyoF_LuL0?si=6cZ-txO53r4Xms3I&t=1971
+https://youtu.be/j7RyoF_LuL0?si=RPla5ybUrm1cfY2J&t=2208

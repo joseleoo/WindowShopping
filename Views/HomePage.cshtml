@@ -16,7 +16,15 @@
 	@foreach(var name in Model.Names)
 	{
 
-		<li>@name</li>
+		<li style="color:red;">@name</li>
 	}
 </ul>
 }
+
+@if (Model.Image != null && !Model.HideFrog)
+{
+
+	<img style="width:50%;height:auto" src="@Model.Image.Url()" alt="tree" />
+}
+
+@Model.BodyText
